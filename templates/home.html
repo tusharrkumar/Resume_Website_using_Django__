@@ -1,0 +1,28 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'images/tushar.jpg' %}" alt="No Picture Detected" class="img-thumbnail" height="100px" width="200px">
+    </div>
+    <div class="text-white mt-4 mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-3" style="line-height: 2rem;">
+            <p style="text-indent:100px">I am <b class="text-warning">Tushar Kumar Panda</b> persuing <b class="text-warning">Python Full Stack Development</b> course in <b class="text-warning">JSPIDER</b> Marathahalli, Bengaluru.</p>
+
+
+            <p>Information technology (IT) is a consistently growing career field, offering a wide variety of roles, positions and responsibilities. Job roles often range in education and experience requirements, providing several opportunities for all professional levels.
+            Knowing more about the job titles. </p>
+            <p>Skilled and certified IT professionals are an asset across all industries. Knowing the various job titles and positions available in the field can help you search for one that fits your qualifications asset across all industries asset across asset across all industries.</p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact_page' %}" class="btn btn-outline-warning my-3 mr-5" id="hire">Hire Me</a>
+        <a href="{% url 'contact_page' %}" class="btn btn-outline-success my-3">Contact</a>
+    </div>
+</div>
+
+{% endblock content %}
